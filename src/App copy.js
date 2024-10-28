@@ -2,29 +2,18 @@ import QRCode from 'qrcode'
 import { useState } from 'react'
 import InputColor from "./components/InputColor"
 
-
 function App() {
-
 	const [url, setUrl] = useState('')
 	const [qr, setQr] = useState('')
-
-
-	//color 
-	const [inputValue, setInputValue] = useState({
-		url: '',
-		color: ''
-	  });
-
 
 	const GenerateQRCode = () => {
 		QRCode.toDataURL(url, {
 			width: 800,
 			margin: 2,
-			/* color: {
-				dark: '#2bcb4b',
+			color: {
+				dark: '#335383FF',
 				light: '#EEEEEEFF'
-			} */
-			color: inputValue.color
+			}
 		}, (err, url) => {
 			if (err) return console.error(err)
 
