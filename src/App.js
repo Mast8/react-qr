@@ -22,15 +22,15 @@ function App() {
 			QRCode.toDataURL(url, {
 				width: 800,
 				margin: 2,
-				/* color: {
-					dark: '#2bcb4b',
+				color: {
+					dark: inputValue.color,
 					light: '#EEEEEEFF'
-				} */
-				color: inputValue.color
+				} 
+				
 			}, (err, url) => {
 				if (err) return console.error(err)
 	
-				console.log(url)
+				
 				setQr(url)
 			})
 		}
