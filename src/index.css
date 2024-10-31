@@ -44,14 +44,20 @@ input {
 	margin-right: 1rem;
 }
 
+.color-picker {
+	display: flex;
+	justify-content: center;
+}
+
 button, a {
 	appearance: none;
-	
 	border: none;
 	background: none;
 	cursor: pointer;
-
-	color: #2bcb4b;
+	color: white;
 	font-size: 1.5rem;
 	text-decoration: none;
+	background: #2bcb4b;
+    border-radius: 5px;
+    padding: 5px;
 }

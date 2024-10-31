@@ -1,7 +1,7 @@
 import axios from "axios";
 import { createContext, useState } from "react";
-import InputForm from "./components/InputForm";
-import QrCode from "./components/QrCode";
+import InputForm from "./components/InputFormll";
+import QrCode from "./components/QrCodell";
 
 // Create context
 export const InputContext = createContext();

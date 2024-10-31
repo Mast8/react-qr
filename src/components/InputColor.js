@@ -18,7 +18,7 @@ const InputColor = () => {
       <label
         className="font-semibold text-md"
       >Color</label>
-      <div className="flex items-center gap-2">
+      <div className="color-picker">
         <div
           onClick={() => setDisplayColorPicker(!displayColorPicker)}
           style={{ background: color }}
@@ -27,7 +27,7 @@ const InputColor = () => {
       </div>
       {
         displayColorPicker && (
-          <div className="absolute mt-2">
+          <div className="">
             <ChromePicker color={color} onChange={handleChange} />
           </div>
         )
