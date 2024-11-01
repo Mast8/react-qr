@@ -7,22 +7,28 @@ export const InputContext = createContext();
 function App() {
 
 	const [url, setUrl] = useState('')
-	const [qr, setQr] = useState('')
+ 	const [qr, setQr] = useState('')
 
+	//one state
+	/* const [url, setUrl] = useState({
+		url: '',
+		color: '#fff'
+	  }); */
 
 	//color 
 	const [inputValue, setInputValue] = useState({
 		url: '',
 		color: '#fff'
-	  });
+	  }); 
 
-	  console.log(inputValue.color);
+	  //console.log(inputValue.color);
 	const GenerateQRCode = () => {
 		if( url.length > 0){
 			QRCode.toDataURL(url, {
 				width: 800,
 				margin: 2,
 				color: {
+					
 					dark: inputValue.color,
 					light: '#EEEEEEFF'
 				} 
@@ -48,6 +54,7 @@ function App() {
 			<h1>QR Generator</h1>
 			
 			<InputContext.Provider value={value}>
+			
 				<InputColor />
 				<input 
 					type="text"
