@@ -23,7 +23,7 @@ const InputColor = () => {
           onClick={() => setDisplayColorPicker(!displayColorPicker)}
           style={{ background: color }}
           className="w-10 h-8 cursor-pointer border-4"></div>
-        <span>{color}</span>
+        <span className="hex">{color}</span>
       </div>
       {
         displayColorPicker && (

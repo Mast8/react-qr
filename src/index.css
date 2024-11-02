@@ -47,6 +47,15 @@ input {
 .color-picker {
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	padding: 10px;
+}
+
+.hex {
+	text-align: center;
+	padding-left: 10px;
+	display: flex;
+	align-items: center;
 }
 
 button, a {
