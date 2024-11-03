@@ -70,3 +70,14 @@ button, a {
     border-radius: 5px;
     padding: 5px;
 }
+
+button:hover, a:hover {
+	color: #2bcb4b;
+	background: white;
+	padding: 6px;
+}
+
+.color-div {
+	display: flex;
+	justify-content: center;
+}

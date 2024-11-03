@@ -3,7 +3,7 @@ import { ChromePicker } from "react-color";
 import { InputContext } from "../App";
 
 const InputColor = () => {
-  const [color, setColor] = useState('#054080');
+  const [color, setColor] = useState('#000000');
   const [displayColorPicker, setDisplayColorPicker] = useState(false);
   // context
   const { inputValue, setInputValue } = useContext(InputContext);
@@ -14,7 +14,7 @@ const InputColor = () => {
   const handleChange = color => setColor(color.hex);
 
   return (
-    <div>
+    <div className="">
       <label
         className="font-semibold text-md"
       >Color</label>
@@ -27,7 +27,7 @@ const InputColor = () => {
       </div>
       {
         displayColorPicker && (
-          <div className="">
+          <div className="color-div">
             <ChromePicker color={color} onChange={handleChange} />
           </div>
         )
