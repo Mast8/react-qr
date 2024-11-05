@@ -52,7 +52,7 @@ function App() {
 		let passed = false;
 		let text = input.trim();
 		if(text == "") {
-		  setMessage("input can not be empty")
+		  setMessage("Input can not be empty")
 		}else if( text.length < 3)
 				setMessage("Input needs to be at least 3 characters long")
 			  else{

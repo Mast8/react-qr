@@ -81,3 +81,8 @@ button:hover, a:hover {
 	display: flex;
 	justify-content: center;
 }
+
+.message {
+	color: red;
+	font-weight: bold;
+}
