@@ -28,7 +28,7 @@ function App() {
 		if(updateMessage(url)){
 			if( url.length > 0){
 				QRCode.toDataURL(url, {
-					width: 800,
+					width: 600,
 					margin: 2,
 					color: {
 						

@@ -59,6 +59,7 @@ input {
 }
 
 button, a {
+	font-weight: bolder;
 	appearance: none;
 	border: none;
 	background: none;
